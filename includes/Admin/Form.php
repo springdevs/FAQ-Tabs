@@ -34,7 +34,7 @@ class Form
     {
         add_meta_box(
             'custompft_faq',
-            __('FAQ', 'sdevs_wea'),
+            __('FAQ', 'sdevs_faqtabs'),
             [$this, 'custompft_admin_screen'],
             'product',
             'normal',
@@ -59,7 +59,7 @@ class Form
         }
 
         if (!wp_verify_nonce($_POST["custompft_nonce"], "custompft_nonce")) {
-            wp_die(__('Sorry !! You cannot permit to access.', 'sdevs_wea'));
+            wp_die(__('Sorry !! You cannot permit to access.', 'sdevs_faqtabs'));
         }
 
         $custompftLength = (int)$_POST["custompftLength"];

@@ -17,7 +17,7 @@ class Tabs
         $faqs = apply_filters("custompft_faq", get_the_ID());
         if (is_array($faqs)) :
             $tabs['custompft_faqs'] = array(
-                'title'     => __('Faq\'s', 'sdevs_wea'),
+                'title'     => __('Faq\'s', 'sdevs_faqtabs'),
                 'priority'     => 50,
                 'callback'     => [$this, 'custompft_tab_content']
             );
